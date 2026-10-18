@@ -1,0 +1,10 @@
+library(dada2)
+fn <- sort(list.files("data/raw", pattern="fastq.gz", full.names=TRUE))
+dir.create("data/processed/filtered", showWarnings=FALSE)
+fl <- file.path("data/processed/filtered", basename(fn))
+out <- filterAndTrim(fn, fl, truncLen=250, maxN=0, maxEE=2, truncQ=2, rm.phix=TRUE, compress=TRUE)
+rl <- read.delim("data/processed/runlist.tsv")
+ids <- sub(".fastq.gz", "", basename(fn))
+rownames(out) <- rl$sample_alias[match(ids, rl$run_accession)]
+write.table(out, "results/03_filter_summary.tsv", sep="\t", quote=FALSE, col.names=NA)
+print(out)
