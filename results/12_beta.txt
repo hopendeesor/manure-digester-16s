@@ -1,0 +1,27 @@
+Loading required package: permute
+
+===== ALL SAMPLES - n = 20 =====
+
+cattle  swine 
+     8     12 
+Group alone: R2=0.211 p=1e-04 F = 4.82 
+FA alone: R2=0.106 p=0.0092 
+Group given FA: R2=0.191 p=1e-04 
+FA given group: R2=0.086 p=0.0099 
+Mean distance to group centre:
+cattle  swine 
+ 0.533  0.483 
+Dispersion test p = 0.3754 
+
+===== WITHOUT s12 AND c7 - n = 18 =====
+
+cattle  swine 
+     7     11 
+Group alone: R2=0.269 p=1e-04 F = 5.88 
+FA alone: R2=0.157 p=0.0029 
+Group given FA: R2=0.217 p=1e-04 
+FA given group: R2=0.105 p=0.0082 
+Mean distance to group centre:
+cattle  swine 
+  0.50   0.45 
+Dispersion test p = 0.1438 
