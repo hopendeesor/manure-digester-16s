@@ -1,0 +1,20 @@
+
+ s12 
+  phyla:  Bacillota 90.9%; Actinomycetota 4.1%; Pseudomonadota 1.8%; Cloacimonadota 0.9% 
+  genera: Fastidiosipila 32.5%; unclassified 17.5%; Gallicola 11.6%; Christensenellaceae R-7 group 3.2%; Caldicoprobacter 3.2% 
+
+ c7 
+  phyla:  Chloroflexota 25.4%; Bacillota 15.4%; Bacteroidota 12.3%; Thermodesulfobacteriota 11.2% 
+  genera: unclassified 46.5%; Leptolinea 6.5%; Anaerolinea 4.6%; Syntrophorhabdus 3.9%; Saccharofermentans 3.6% 
+
+ s13 
+  phyla:  Bacillota 54.9%; Bacteroidota 26.3%; Atribacterota 4.1%; Verrucomicrobiota 2.6% 
+  genera: unclassified 38.9%; Clostridium 17.6%; Terrisporobacter 4.7%; Christensenellaceae R-7 group 4.7%; DMER64 3.8% 
+
+ s14 
+  phyla:  Bacillota 54%; Bacteroidota 26.7%; Atribacterota 4%; Verrucomicrobiota 2.9% 
+  genera: unclassified 40.7%; Clostridium 15.5%; Christensenellaceae R-7 group 5.7%; Terrisporobacter 4.2%; Sedimentibacter 3.7% 
+
+ MEAN OF ALL 20 
+  phyla:  Bacillota 59.8%; Bacteroidota 14.1%; Chloroflexota 6.7%; Thermodesulfobacteriota 3.5% 
+  genera: unclassified 28.7%; Clostridium 15%; Christensenellaceae R-7 group 4.6%; Turicibacter 4.2%; Romboutsia 3.3% 
