@@ -1,0 +1,27 @@
+library(vegan)
+library(ggplot2)
+nc <- readRDS("data/processed/seqtab_nochim.rds")
+meta <- read.delim("data/processed/metadata.tsv")
+stopifnot(identical(rownames(nc), meta$sample))
+rel <- nc / rowSums(nc)
+d <- vegdist(rel, method="bray")
+pc <- cmdscale(d, k=2, eig=TRUE)
+ev <- pc$eig[pc$eig > 0]
+pct <- round(100 * pc$eig[1:2] / sum(ev), 1)
+df <- data.frame(sample=meta$sample, group=meta$group)
+df$PC1 <- pc$points[, 1]
+df$PC2 <- pc$points[, 2]
+df$reads <- rowSums(nc)
+m <- as.matrix(d)
+diag(m) <- NA
+df$mean_bc <- round(rowMeans(m, na.rm=TRUE), 3)
+df$nearest <- apply(m, 1, function(x) colnames(m)[which.min(x)])
+df$nearest_bc <- round(apply(m, 1, min, na.rm=TRUE), 3)
+write.table(df, "results/08_outlier_check.tsv", sep="\t", quote=FALSE, row.names=FALSE)
+print(df[order(-df$mean_bc), c("sample","group","mean_bc","nearest","nearest_bc")])
+cat("PC% explained:", pct, "\n")
+cat("cor(PC1, reads):", round(cor(df$PC1, df$reads), 2), "\n")
+p <- ggplot(df, aes(PC1, PC2, colour=group, label=sample)) + geom_point(size=3)
+p <- p + geom_text(vjust=-0.8, size=3) + theme_bw()
+p <- p + labs(x=paste0("PC1 (", pct[1], "%)"), y=paste0("PC2 (", pct[2], "%)"))
+ggsave("figures/08_pcoa_first_look.png", p, width=6, height=5, dpi=150)
