@@ -1,0 +1,21 @@
+set.seed(1)
+library(vegan)
+library(ggplot2)
+nc <- readRDS("data/processed/seqtab_nochim.rds")
+md <- read.delim("data/processed/digester_metadata.tsv")
+stopifnot(identical(rownames(nc), md$sample))
+d <- vegdist(nc / rowSums(nc), method="bray")
+pc <- cmdscale(d, k=2, eig=TRUE)
+ev <- pc$eig[pc$eig > 0]
+pct <- round(100 * pc$eig[1:2] / sum(ev), 1)
+df <- data.frame(sample=md$sample, group=md$group, fa=md$fa)
+df$PC1 <- pc$points[, 1]
+df$PC2 <- pc$points[, 2]
+p <- ggplot(df, aes(PC1, PC2, shape=group, colour=fa))
+p <- p + geom_point(size=4) + ggrepel::geom_text_repel(aes(label=sample), size=3, colour="black")
+p <- p + scale_colour_viridis_c(name="Free ammonia\n(mg/L)")
+p <- p + scale_shape_manual(values=c(cattle=16, swine=17), name="Substrate")
+p <- p + labs(x=paste0("PCoA 1 (", pct[1], "%)"), y=paste0("PCoA 2 (", pct[2], "%)"))
+p <- p + theme_bw()
+ggsave("figures/13_pcoa_group_fa.png", p, width=7, height=5.5, dpi=200)
+cat("PCoA 1 and 2 explain", pct, "percent\n")
