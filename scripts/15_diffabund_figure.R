@@ -1,0 +1,23 @@
+library(ggplot2)
+nc <- readRDS("data/processed/seqtab_nochim.rds")
+taxa <- readRDS("data/processed/taxa.rds")
+md <- read.delim("data/processed/digester_metadata.tsv")
+res <- read.delim("results/14_diffabund.tsv")
+top <- head(res$genus, 12)
+g <- unname(taxa[, "Genus"])
+g[is.na(g)] <- "no_genus"
+gt <- t(rowsum(t(nc), group=g))
+rel <- 100 * gt / rowSums(gt)
+one <- function(k) {
+  data.frame(group=md$group, genus=k, pct=unname(rel[, k]))
+}
+l <- do.call(rbind, lapply(top, one))
+l$genus <- factor(l$genus, levels=top)
+p <- ggplot(l, aes(group, pct, colour=group))
+p <- p + geom_boxplot(outlier.shape=NA, fill=NA)
+p <- p + geom_jitter(width=0.15, height=0, size=2)
+p <- p + facet_wrap(~genus, scales="free_y", ncol=4)
+p <- p + labs(x=NULL, y="Relative abundance (% of reads)")
+p <- p + theme_bw() + theme(legend.position="none")
+ggsave("figures/15_top_genera.png", p, width=10, height=8, dpi=200)
+cat("Plotted", length(top), "genera\n")
