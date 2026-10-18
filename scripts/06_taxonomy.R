@@ -1,0 +1,11 @@
+library(dada2)
+nc <- readRDS("data/processed/seqtab_nochim.rds")
+seqs <- getSequences(nc)
+ref <- "data/raw/ref/silva_nr99_v138.2_toGenus_trainset.fa.gz"
+taxa <- assignTaxonomy(seqs, ref, multithread=FALSE)
+saveRDS(taxa, "data/processed/taxa.rds")
+write.table(taxa, "results/06_taxonomy.tsv", sep="\t", quote=FALSE, col.names=NA)
+cat("ASVs:", nrow(taxa), "\n")
+cat("With phylum:", sum(!is.na(taxa[,"Phylum"])), "\n")
+cat("With genus:", sum(!is.na(taxa[,"Genus"])), "\n")
+print(table(taxa[,"Kingdom"], useNA="ifany"))
