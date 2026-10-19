@@ -17,9 +17,9 @@
 | Syntrophorhabdus | reference genus | 14 | 0.789 | 0.383 | 0.4194 | Syntrophic degrader of aromatic compounds to acetate, working with hydrogenotrophic methanogens; lower at high free ammonia | Li2015 |
 | Leptolinea | reference genus | 14 | 1.331 | 0.714 | 0.3227 | Chloroflexota; phylum members reported to do syntrophic metabolism with hydrogenotrophic methanogens; genus role not established | Li2015 |
 | Anaerolinea | reference genus | 11 | 1.14 | 0.046 | 0.0843 | Chloroflexota; phylum members reported to do syntrophic metabolism with hydrogenotrophic methanogens; genus role not established | Li2015 |
-| Methanothrix | reference genus | 16 | 0.19 | 0.149 | 0.4194 | Acetoclastic methanogen (acetate only); synonym Methanosaeta; often the most abundant methanogen genus; inhibited by high ammonia | MethTab;Demirel2008 |
-| Methanosarcina | reference genus | 5 | 0.007 | 0.016 | 0.1085 | Methanogen using acetate, H2 and CO2, and methanol; favoured under high ammonia, for example in cattle manure | MethTab;Demirel2008 |
-| Methanobrevibacter | reference genus | 6 | 0.014 | 0.004 | 0.3227 | Hydrogenotrophic methanogen (H2 and CO2); also a core rumen genus, so may come with the manure | MethTab;Rumen2026b |
-| Methanobacterium | reference genus | 6 | 0.01 | 0.007 | 0.9637 | Hydrogenotrophic methanogen (H2 and CO2, formate) | MethTab |
-| Methanoregula | reference genus | 1 | 0.016 | 0 | n/a | Hydrogenotrophic methanogen (H2 and CO2); acidophilic | MethTab |
-| Candidatus Methanofastidiosum | reference genus | 9 | 0.01 | 0.009 | 0.6998 | Methanogen using methylated thiols | MethTab |
+| Methanothrix | reference genus | 16 | 0.19 | 0.149 | 0.4194 | Acetoclastic methanogen (acetate only); synonym Methanosaeta; often the most abundant methanogen genus; inhibited by high ammonia | Review2022;Demirel2008 |
+| Methanosarcina | reference genus | 5 | 0.007 | 0.016 | 0.1085 | Methanogen using acetate, H2 and CO2, and methanol; favoured under high ammonia, for example in cattle manure | Review2022;Demirel2008 |
+| Methanobrevibacter | reference genus | 6 | 0.014 | 0.004 | 0.3227 | Hydrogenotrophic methanogen (H2 and CO2); also a core rumen genus, so may come with the manure | Review2022;Rumen2026b |
+| Methanobacterium | reference genus | 6 | 0.01 | 0.007 | 0.9637 | Hydrogenotrophic methanogen (H2 and CO2, formate) | Review2022 |
+| Methanoregula | reference genus | 1 | 0.016 | 0 | n/a | Hydrogenotrophic methanogen (H2 and CO2); acidophilic | Review2022 |
+| Candidatus Methanofastidiosum | reference genus | 9 | 0.01 | 0.009 | 0.6998 | Methanogen using methylated thiols | Review2022 |

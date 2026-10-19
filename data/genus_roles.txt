@@ -9,9 +9,9 @@ Syntrophomonas|Syntrophic genus; core genus in the source study; also linked to 
 Syntrophorhabdus|Syntrophic degrader of aromatic compounds to acetate, working with hydrogenotrophic methanogens; lower at high free ammonia|Li2015
 Leptolinea|Chloroflexota; phylum members reported to do syntrophic metabolism with hydrogenotrophic methanogens; genus role not established|Li2015
 Anaerolinea|Chloroflexota; phylum members reported to do syntrophic metabolism with hydrogenotrophic methanogens; genus role not established|Li2015
-Methanothrix|Acetoclastic methanogen (acetate only); synonym Methanosaeta; often the most abundant methanogen genus; inhibited by high ammonia|MethTab;Demirel2008
-Methanosarcina|Methanogen using acetate, H2 and CO2, and methanol; favoured under high ammonia, for example in cattle manure|MethTab;Demirel2008
-Methanobrevibacter|Hydrogenotrophic methanogen (H2 and CO2); also a core rumen genus, so may come with the manure|MethTab;Rumen2026b
-Methanobacterium|Hydrogenotrophic methanogen (H2 and CO2, formate)|MethTab
-Methanoregula|Hydrogenotrophic methanogen (H2 and CO2); acidophilic|MethTab
-Candidatus Methanofastidiosum|Methanogen using methylated thiols|MethTab
+Methanothrix|Acetoclastic methanogen (acetate only); synonym Methanosaeta; often the most abundant methanogen genus; inhibited by high ammonia|Review2022;Demirel2008
+Methanosarcina|Methanogen using acetate, H2 and CO2, and methanol; favoured under high ammonia, for example in cattle manure|Review2022;Demirel2008
+Methanobrevibacter|Hydrogenotrophic methanogen (H2 and CO2); also a core rumen genus, so may come with the manure|Review2022;Rumen2026b
+Methanobacterium|Hydrogenotrophic methanogen (H2 and CO2, formate)|Review2022
+Methanoregula|Hydrogenotrophic methanogen (H2 and CO2); acidophilic|Review2022
+Candidatus Methanofastidiosum|Methanogen using methylated thiols|Review2022
