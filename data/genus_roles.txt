@@ -1,0 +1,17 @@
+Clostridium|Dominant in manure digesters; described as carrying cellulose- and hemicellulose-degrading enzyme genes (fibre breakdown); rose with free ammonia in the source study|Li2015
+Terrisporobacter|Fermenter of carbohydrates and amino acids; some strains acetogenic (H2 and CO2 to acetate); a species was isolated from bovine faeces|Boer2024;Mitchell2023
+Fastidiosipila|Associated with phenyl acid formation from aromatic compounds in mesophilic digesters|Lignin2020
+Lachnospiraceae NK3A20 group|Fibre-degrading rumen group and a core genus in the cattle rumen; probably arrives with manure; digester role not established|Rumen2026a;Rumen2026b
+Mogibacterium|Reported in the sheep gut; digester role not established|TibSheep2024
+Lactobacillus|Lactic acid bacteria; dominant in acid-producing food-waste digesters (sugars to lactate and acetate)|Acetate2020
+Turicibacter|Listed by the source study among core genera involved in hydrolysis and fermentation|Li2015
+Syntrophomonas|Syntrophic genus; core genus in the source study; also linked to phenyl acid formation|Li2015;Lignin2020
+Syntrophorhabdus|Syntrophic degrader of aromatic compounds to acetate, working with hydrogenotrophic methanogens; lower at high free ammonia|Li2015
+Leptolinea|Chloroflexota; phylum members reported to do syntrophic metabolism with hydrogenotrophic methanogens; genus role not established|Li2015
+Anaerolinea|Chloroflexota; phylum members reported to do syntrophic metabolism with hydrogenotrophic methanogens; genus role not established|Li2015
+Methanothrix|Acetoclastic methanogen (acetate only); synonym Methanosaeta; often the most abundant methanogen genus; inhibited by high ammonia|MethTab;Demirel2008
+Methanosarcina|Methanogen using acetate, H2 and CO2, and methanol; favoured under high ammonia, for example in cattle manure|MethTab;Demirel2008
+Methanobrevibacter|Hydrogenotrophic methanogen (H2 and CO2); also a core rumen genus, so may come with the manure|MethTab;Rumen2026b
+Methanobacterium|Hydrogenotrophic methanogen (H2 and CO2, formate)|MethTab
+Methanoregula|Hydrogenotrophic methanogen (H2 and CO2); acidophilic|MethTab
+Candidatus Methanofastidiosum|Methanogen using methylated thiols|MethTab
