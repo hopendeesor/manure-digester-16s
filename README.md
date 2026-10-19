@@ -297,7 +297,7 @@ Reads: ENA project PRJEB6969. Reference database: Zenodo record 14169026. Digest
 ## 12. References
 
 - Callahan BJ, McMurdie PJ, Rosen MJ, Han AW, Johnson AJA, Holmes SP (2016). DADA2: high-resolution sample inference from Illumina amplicon data. Nature Methods 13:581-583.
-- Demirel B, Scherer P (2008). The roles of acetotrophic and hydrogenotrophic methanogens during anaerobic conversion of biomass to methane: a review. (Journal details to be completed; see `data/role_sources.txt`.)
+- Demirel B, Scherer P (2008). The roles of acetotrophic and hydrogenotrophic methanogens during anaerobic conversion of biomass to methane: a review. Reviews in Environmental Science and Bio/Technology, 7(2): 173–190
 - Li J, et al. (2015). Substrate type and free ammonia determine bacterial community structure in full-scale mesophilic anaerobic digesters treating cattle or swine manure. Frontiers in Microbiology 6:1337. doi:10.3389/fmicb.2015.01337
 - SILVA 138.2 training set formatted for DADA2. Zenodo record 14169026.
-- Further sources for the functional annotation: `data/role_sources.txt`.
+
